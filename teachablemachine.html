@@ -42,7 +42,7 @@
 
       <p>
         We chose to classify four everyday objects that we commonly use:
-        <strong>a book, a Labubu figure, a water bottle, and a tissue</strong>.
+        <strong>a book, a Labubu figure, a water bottle and a tissue box </strong>.
         These objects were visually distinct and easy to capture through the webcam, making them ideal examples for an
         introductory image classification project. We intentionally selected items with different shapes, textures, and 
         colors to see whether the model could learn to differentiate between them.
@@ -50,31 +50,31 @@
 
       <p>
         To build the dataset, we captured multiple images of each object using a laptop webcam. For every category, we 
-        experimented with various angles, distances, and lighting conditions to help the model learn more generalized 
+        experimented with various angles and distances conditions to help the model learn more generalized 
         patterns. For example, we rotated the book and water bottle, held the Labubu figure at different heights, and 
-        positioned the tissue in both folded and unfolded shapes. This process demonstrated how essential variation is when 
+        positioned the tissue box in from the back and front. This process demonstrated how essential variation is when 
         creating a robust machine learning classifier.
       </p>
 
       <p>
         After training the model, we used the live preview tool in Teachable Machine to test accuracy. We noticed that 
-        lighting played a major role in classification performance. Under bright, even lighting, the model predicted 
-        correctly most of the time. However, when shadows appeared or when we moved objects too quickly, the model hesitated 
-        or made mistakes. This showed us that machine learning is highly sensitive to training conditions and that real-world 
-        performance can differ significantly from controlled training scenarios.
+        distance played a major role in classification performance. The near the object to the webcam, the model predicted 
+        correctly most of the time. However, when we put the object far from webcam or when we moved objects too quickly, 
+        the model hesitated or made mistakes. This showed us that machine learning is highly sensitive to training conditions 
+        and that real-world performance can differ significantly from controlled training scenarios.
       </p>
 
       <p>
         Once we were satisfied with the model’s performance, we exported it as a “web model” and integrated the JavaScript 
         code into our <code>teachablemachine.html</code> page. We also recorded a demonstration video to explain how the 
-        classifier works, how each object was trained, and how users can interact with the live camera feed. This allowed us 
+        classifier works, how each object was trained and how users can interact with the live camera feed. This allowed us 
         to present the project in a more interactive and accessible format.
       </p>
 
       <p>
         Overall, this project strengthened our understanding of how data collection, testing, and web development intersect 
         in machine learning. We saw firsthand how training data quality affects accuracy and how small choices—such as 
-        background, lighting, and object positioning—shape what the model learns. This experience helped us appreciate the 
+        background, lighting and object positioning—shape what the model learns. This experience helped us appreciate the 
         complexity behind AI systems that appear simple on the surface.
       </p>
     </section>
@@ -91,15 +91,15 @@
         <em>Unmasking AI</em> in a much deeper and more personal way. Joy writes that
         <strong>“the architecture of AI is shaped by the priorities and prejudices of those who build it”</strong>,
         and we saw this play out as we trained our model. Since our dataset consisted entirely of our own images of a book,
-        a Labubu figure, a water bottle, and a tissue, the model learned only from the conditions we provided—our lighting,
-        our angles, our background, and our choices. This made us realize that even small AI projects reflect the 
+        a Labubu figure, a water bottle, and a tissue box, the model learned only from the conditions we provided such as our 
+        distances, our angles, our background and our choices. This made us realize that even small AI projects reflect the 
         limitations of their creators.
       </p>
 
       <p>
         Joy’s concept of the <strong>coded gaze</strong> became especially relevant as we tested our classifier.
         She defines this as the bias embedded in systems shaped by developers’ assumptions. 
-        Our classifier performed best when the objects were shown in lighting or positions similar to the training images. 
+        Our classifier performed best when the objects were shown in distances, positions or lightings similar to the training images. 
         When shadows appeared or when we held the Labubu figure too far from the camera, the model sometimes misclassified 
         it. This helped us understand how large-scale AI systems struggle when encountering users or conditions that differ 
         from the “norms” present in their datasets.
@@ -121,8 +121,8 @@
 
       <p>
         Through this assignment, we realized that building an AI model is not just a technical task but an ethical 
-        responsibility. Joy’s message—that we can demand better and design more inclusive technology—encourages us to
-        think critically about every choice we made: the objects we selected, the lighting we used, the images we collected,
+        responsibility. Joy’s message—that we can demand better and design more inclusive technology, encourages us to
+        think critically about every choice we made: the objects we selected, the lighting we used, the images we collected
         and the way we presented the results. This project made us more aware of the responsibilities that come with 
         designing AI, even in a classroom setting.
       </p>
