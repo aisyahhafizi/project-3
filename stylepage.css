@@ -35,6 +35,7 @@ body {
   margin-top: 0;
   margin-bottom: 20px;
 }
+
 /* Navigation (Sticky Enabled) */
 nav {
   position: sticky;
@@ -71,8 +72,9 @@ nav a:hover {
   color: #ffc107;
   background: rgba(255, 255, 255, 0.1);
   transform: scale(1.08);
-  
-}/* --- Index.html Image Section --- */
+}
+
+/* --- Index.html Image Section --- */
 .hero-image-container {
   max-width: 600px;
   margin: 30px auto;
@@ -270,12 +272,11 @@ nav a:hover {
 /* Youtube Videos */
 .video-container {
   position: relative;
-  padding-bottom: 56.25%;
+  padding-bottom: 56.25%; /* 16:9 */
   height: 0;
   overflow: hidden;
   max-width: 100%;
   margin: 20px auto;
-  margin-bottom: 0;
 }
 
 .video-container iframe {
@@ -386,5 +387,39 @@ nav a:hover {
   }
 }
 
+/* ---------- NEW: Teachable Machine Page Layout ---------- */
 
+/* Project Statement + Reflection + References sections */
+.content-section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-top: 6px solid #007bff;
+}
 
+.content-section h2 {
+  color: #007bff;
+  margin-bottom: 15px;
+  font-size: 1.9rem;
+  text-align: left;
+  border-bottom: 2px solid #eaeaea;
+  padding-bottom: 5px;
+}
+
+.content-section p {
+  font-size: 1.05rem;
+  margin: 10px 0 18px 0;
+  color: #555;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+/* Center the p5.js canvas on TM page */
+#p5-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+}
