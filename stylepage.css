@@ -387,7 +387,7 @@ nav a:hover {
   }
 }
 
-/* ---------- NEW: Teachable Machine Page Layout ---------- */
+/* Teachable Machine Page Layout */
 
 /* Project Statement + Reflection + References sections */
 .content-section {
@@ -415,6 +415,26 @@ nav a:hover {
   color: #555;
   line-height: 1.7;
   text-align: justify;
+}
+
+.button-row {
+  text-align: center;
+  margin: 16px 0 24px 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 6px;
+  background-color: #2064d8;  /* match your header blue */
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.button:hover {
+  background-color: #154a9b;
 }
 
 /* Center the p5.js canvas on TM page */
