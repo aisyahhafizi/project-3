@@ -39,45 +39,49 @@
         training the model, to deploying it on a webpage that users can interact with. This project allowed us to combine
         machine learning concepts with front-end web design while also thinking critically about how AI models behave in
         real environments.
-      </p>
-    
+        </p>
+        
       <p>
         We chose to classify four everyday objects that we commonly use:
         <strong>a book, a Labubu figure, a water bottle and a tissue box</strong>.
         These objects were visually distinct and easy to capture through the webcam, making them ideal examples for an
         introductory image classification project. We intentionally selected items with different shapes, textures and 
-        colors to see whether the model could learn to differentiate between them.
+        colors to see whether the model could learn to differentiate between them. 
+      </p>
+        
+      <p>
+        To build the dataset, we captured multiple images of each object using a laptop webcam. To improve generalization, 
+        we collected around 400 images in total. For every category, we experimented with various angles and distances to 
+        help the model learn more generalized patterns. For example, we rotated the book and water bottle, held the Labubu figure 
+        at different heights and positioned the tissue box from the back and front. We deliberately tested different books at different distances 
+        and sizes, while adjusting a bit of the lighting but not too much, to see if the model recognized the object concept rather than memorizing 
+        one specific example. This process demonstrated how essential variation is when creating a robust machine learning classifier.
       </p>
 
-      <p>
-        To build the dataset, we captured multiple images of each object using a laptop webcam. For every category, we 
-        experimented with various angles and distances to help the model learn more generalized 
-        patterns. For example, we rotated the book and water bottle, held the Labubu figure at different heights and 
-        positioned the tissue box from the back and front. This process demonstrated how essential variation is when 
-        creating a robust machine learning classifier.
-      </p>
-    
       <p>
         After training the model, we used the live preview tool in Teachable Machine to test accuracy. We noticed that 
         distance played a major role in classification performance. The nearer the object to the webcam, the more the model 
         predicted correctly most of the time. However, when we put the object far from the webcam or when we moved objects 
-        too quickly, the model hesitated or made mistakes. This showed us that machine learning is highly sensitive to 
-        training conditions and that real-world performance can differ significantly from controlled training scenarios.
+        too quickly, the model hesitated or made mistakes. These observations informed our testing process and motivated us to 
+        add extra samples whenever the model struggled with a particular angle or distance. This showed us that machine learning 
+        is highly sensitive to training conditions and that real-world performance can differ significantly from controlled 
+        training scenarios.
       </p>
-    
+
       <p>
         Once we were satisfied with the model’s performance, we exported it as a “web model” and integrated the JavaScript 
         code into our <code>teachablemachine.html</code> page. We also recorded a demonstration video to explain how the 
         classifier works, how each object was trained and how users can interact with the live camera feed. This allowed us 
         to present the project in a more interactive and accessible format.
       </p>
-
+      
       <p>
-        Overall, this project strengthened our understanding of how data collection, testing, and web development intersect 
+        Overall, this project strengthened our understanding of how data collection, testing and web development intersect 
         in machine learning. We saw firsthand how training data quality affects accuracy and how small choices such as 
         background, lighting and object positioning shape what the model learns. This experience helped us appreciate the 
         complexity behind AI systems that appear simple on the surface.
       </p>
+
     </section>
 
     <!-- Aisyah's Reflection -->
@@ -121,7 +125,9 @@
         Through this assignment, we realized that building an AI model is not just a technical task but an ethical 
         responsibility. Joy’s message that we can demand better and design more inclusive technology encourages us to
         think critically about every choice we made: the objects we selected, the lighting we used, the images we collected
-        and the way we presented the results. This project made us more aware of the responsibilities that come with 
+        and the way we presented the results. Even the background and the way we physically held each object influenced the predictions, 
+        which made us aware of how small technical choices can create unintended bias. This project made us more aware of the responsibilities 
+        that come with designing AI, even in a classroom setting. This project made us more aware of the responsibilities that come with 
         designing AI, even in a classroom setting.
       </p>
     </section>
@@ -129,49 +135,45 @@
     <!-- Maia's Project Statement  -->
     <section id="project-statement-maia" class="content-section">
       <h2>Project Statement – Maia Nebo</h2>
-    
       <p>
-        In this project, we implemented an image analyzing machine learning model into our website using Teachable Machine’s on Google.
-        This project helped us gain an understanding of how algorithms, image processing, and machine learning work.
-        Creating this model took us through step-by-step on image analysis and data feedback loops. This project became a lesson
-        in ethics as well as Buolamwini’s Unmasking AI, shaping expectations about algorithmic bias.
-      </p>
-    
-      <p>
-        The main goal of this teachable machine was to be able to classify everyday objects with minimal error and efficiency.
-        The objects that were chosen were four very distinct objects with different size and texture, so we could see if the model
-        could observe and distinguish effectively. For our items, we chose a book, a Labubu, a water bottle, and a tissue box.
-        We chose simple household objects because we wanted to focus on understanding bias rather than on complexity.
+        In this project, we implemented an image-based machine learning model into our website using Google’s Teachable Machine.
+        This project helped us gain an understanding of how algorithms, image processing, and machine learning work in practice.
+        Creating this model walked us through step-by-step image analysis and data feedback loops. This project also became a lesson
+        in ethics as well as Buolamwini’s <em>Unmasking AI</em>, shaping our expectations about algorithmic bias and dataset limitations.
       </p>
 
       <p>
-        Google's teachable machine is a web based tool that allows us to create our machine learning model while being accessible
-        and straightforward. We collected our images using a laptop webcam and grouped them together. We grouped by object, but
-        there were many positions/angles for every object to ensure a full-bodied machine. It was important to capture these
-        objects from different angles so that we could minimize limitations. Buolamwini puts forth the idea of limitations,
-        with many data sets lacking representation even on a large scale. Our data almost mirrors that of a smaller scale because
-        we were limited on photography elements like camera quality, background, and lighting situations.
-      </p>
-    
-      <p>
-        After we had uploaded the images at angles, we trained the model using the train model button and the live preview tool
-        on the website. The train model platform on Teachable machines uses the data/images uploaded and processes patterns
-        within it to help the machine differentiate and classify. The main issue that we had occurred was a slight problem
-        with the depth perception of the model. When the object was placed far it made a lot more mistakes and had more
-        trouble than when the object was placed closer. It’s almost as if the machine could not gauge how far the object was
-        and what group it actually belonged to. The model may have had faults at first due to a lack of data or an environmental
-        mismatch. To us, it was an example of the myth of AI neutrality because the machine's effectiveness was all reliant
-        on training and the data that we chose to use. The platform did not take long to train the model, but we noticed how
-        the website is not transparent on how it weighted different features.
+        The main goal of this Teachable Machine project was to classify everyday objects with minimal error and efficiency.
+        We selected four distinct objects with different sizes and textures to see whether the model could distinguish between them effectively.
+        For our items, we chose a book, a Labubu figure, a water bottle, and a tissue box. We intentionally selected simple household objects
+        because we wanted to focus on understanding bias rather than technical complexity.
       </p>
 
       <p>
-        After the testing of our model, we implemented it into our website's .html page and also uploaded the demonstration video.
-        This model ended up being both efficient while also being accessible. Ultimately, this project helped us understand how
-        machine learning works; it also helped us understand how limited datasets, quality, and misclassifications could cause
-        harm when used at a large scale. We were only allowed to use up to 30 images for each object on teachable machines,
-        if a small dataset was used like that in a larger machine learning model, it could add many disadvantages to users.
+        Google's Teachable Machine is a web-based tool that allows us to create a machine learning model while remaining accessible
+        and straightforward. We collected our images using a laptop webcam and grouped them by object category, using multiple positions
+        and angles to create variation. It was important to capture objects from different angles so that we could minimize limitations.
+        Buolamwini discusses how dataset limitations often produce bias and although our project was small, our dataset reflected similar
+        constraints based on camera quality, background, and lighting conditions.
       </p>
+      
+      <p>
+        After we uploaded the images, we trained the model using the Train Model button and the live preview tool.
+        The platform uses the data/images uploaded and processes visual patterns in order to classify new images.
+        One issue we encountered was a problem with depth perception. When the object was placed farther from the webcam, the model
+        misclassified it more often than when it was up close. It was almost as if the machine could not interpret distance or scale.
+        This seemed like a small example of the myth of AI neutrality, since our model’s performance depended entirely on the training
+        conditions we provided. We noticed how the platform is not transparent about how certain visual features are weighted.
+      </p>
+
+      <p>
+        After testing our model, we embedded it into our website’s HTML file and uploaded a demonstration video.
+        This model ended up being both efficient and accessible for users. Ultimately, this project helped us understand how
+        machine learning functions, and it also showed how limited datasets, camera quality, and misclassifications could lead
+        to problems if used in high-stakes systems. We noticed that the more images we added, the longer the training process became in Teachable Machine, 
+        so we decided to keep our dataset at around 400 images to balance performance and training time.
+      </p>
+
     </section>
 
 
@@ -192,7 +194,7 @@
       <p>
         Buoloamwini writes, “When companies require individuals to fit a narrow definition of acceptable behavior encoded into
         a machine learning model, they will reproduce harmful patterns of exclusion and suspicion.” Teachable machines only
-        allowed us to upload 30 images to train our model, but what if our objects had more extensive features? Using narrow
+        allowed us to upload less images to train our model, but what if our objects had more extensive features? Using narrow
         datasets like the one we used on our machines can lack representation that could disadvantage users. This helped us
         understand how AI systems can exemplify bias.
       </p>
